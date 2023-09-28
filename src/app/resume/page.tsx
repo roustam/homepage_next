@@ -1,4 +1,3 @@
-"use client"
 import TopNavbar from "../components/TopNavbar"
 
 export default function ResumePage() {

@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image"
 import TopNavbar from "./components/TopNavbar"
 import FrontLogoSrc from '../../public/robot.jpg'
