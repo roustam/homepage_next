@@ -12,13 +12,13 @@ export default function Home() {
           <div>
             <p>Hello, my name is Roustam.</p>
             <p className=" py-3 tracking-wide">
-          I'm a passionate web developer, weaving the magic of Python to bring your digital vision to life. 
+          I&apos;m a passionate web developer, weaving the magic of Python to bring your digital vision to life. 
           Backend is my playground, where I architect robust functionalities with FastAPI and Django. 
-          Let's turn your ideas into pixels and bytes, crafting a web experience that resonates with your users.
+          Let&apos;s turn your ideas into pixels and bytes, crafting a web experience that resonates with your users.
           </p>
-          <p className=" font-semibold tracking-wide">Contact me today and let's build something extraordinary.</p>
+          <p className=" font-semibold tracking-wide">Contact me today and let&apos;s build something extraordinary.</p>
 
-          <p>P.S. I'm not just code - I'm a problem-solver, a collaborator,
+          <p>P.S. I&apos;m not just code - I&apos;m a problem-solver, a collaborator,
            and a person with a knack for turning complex concepts into elegant solutions.</p>
           </div>
 
