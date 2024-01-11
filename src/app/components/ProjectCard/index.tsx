@@ -23,7 +23,7 @@ interface CardProps {
                 </div>
                 <div>
                 <Image
-                    radius="0"
+                    radius="md"
                     alt="nextui logo"
                     src={imageUrl}
                     

@@ -5,13 +5,29 @@ import ProjectCard from "./components/ProjectCard"
 
 export default function Home() {
   return (
-    <main className="flex w-2/3 h-screen flex-col justify-between items-center mx-auto">
+    <main className="flex w-2/3 flex-col justify-between items-center mx-auto">
       <TopNavbar />
-      <div className=" flex-row px-4 py-4 bg-slate-100 mt-4 rounded-xl">
-        <p>Hello, my name is Roustam. I am a software engineer.</p>
-        <p>I am proficient with building web applications and various automation scripts.</p>
+      <div className="flex flex-nowrap justify-between px-4 py-4 bg-white mt-4 rounded-xl">
+        <div className="flex justify-between flex-nowrap">
+          <div>
+            <p>Hello, my name is Roustam.</p>
+            <p className=" py-3 tracking-wide">
+          I'm a passionate web developer, weaving the magic of Python to bring your digital vision to life. 
+          Backend is my playground, where I architect robust functionalities with FastAPI and Django. 
+          Let's turn your ideas into pixels and bytes, crafting a web experience that resonates with your users.
+          </p>
+          <p className=" font-semibold tracking-wide">Contact me today and let's build something extraordinary.</p>
+
+          <p>P.S. I'm not just code - I'm a problem-solver, a collaborator,
+           and a person with a knack for turning complex concepts into elegant solutions.</p>
+          </div>
+
         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsa, unde atque aliquid alias ipsum commodi voluptas recusandae magnam necessitatibus voluptatum illo dolore, ducimus nam accusamus, quia tempora qui voluptatem!</p> */}
-        {/* <Image src="/img/robot.jpg" alt="logo" height={140}  width={140} className="rounded-full"/> */}
+        
+          <Image src={'/img/photo-small.png'} alt="my photo" height={0} width={0}  
+          style={{ width: 'auto', height: 'auto', borderRadius:"100%" }}  />
+          
+        </div>
       </div>
       <div className="flex-col justify-start w-full mb-auto py-4"> 
         <h2>Recent projects</h2>
@@ -32,16 +48,15 @@ export default function Home() {
             imageUrl='/img/website-icon.svg'/>
 
           <ProjectCard 
-            projectName="Image portal" 
+            projectName="Django image gallery app" 
             usedLibs={['python', 'django', 'javascript']}
             sourceLink="https://github.com/roustam/test-job-image-portal" 
             demoLink=""
             description="Small image gallery web app where you can upload and view images.
             App validates the filetypes you can upload." 
             imageUrl='/img/gallery-portal.svg'/>
-            
-          
-          <ProjectCard 
+    
+          <ProjectCard
             projectName="Geo calculator" 
             usedLibs={['leafletjs', 'djangogis', 'docker']}
             sourceLink="https://github.com/roustam/geos_test" 
@@ -50,11 +65,11 @@ export default function Home() {
             imageUrl='/img/country-location-icon.svg'/>
           
           <ProjectCard 
-            projectName="Yandex.practicum tasks" 
+            projectName="Yandex.practicum completed tasks" 
             usedLibs={['FastAPI', 'ElasticSearch', 'API']}
-            sourceLink="#"
+            sourceLink="https://github.com/roustam/async_api_sprint_team_22"
             
-            description="Movies database API built with ElasticSearch." 
+            description="FastApi based API for movies database. Uses ElasticSearch engine." 
             imageUrl='/img/python-logo.svg'/>
 
           <ProjectCard 
@@ -64,9 +79,6 @@ export default function Home() {
 
             description="Python script that filters dictionary for same id operations and returns ones with latest timestamp. Another script uploads specified files to directory.  " 
             imageUrl='/img/python-logo.svg'/>
-
-
-
         </div>
       </div>
     <SiteFooter />
