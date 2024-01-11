@@ -13,7 +13,7 @@ export default function TopNavbar() {
     <Navbar position="static" className="font-semibold rounded-xl">
       <NavbarBrand >
         <Link href="/">
-          <Image priority width={50} height={20} src="/img/blob.svg" alt='test' />
+          <Image priority width={50} height={20} src="/img/web-dev-icon.svg" alt='web development logo' />
           Roustam blog
         </Link>
       </NavbarBrand>

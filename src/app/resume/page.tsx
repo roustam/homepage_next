@@ -1,13 +1,17 @@
+import Link from "next/link"
 import TopNavbar from "../components/TopNavbar"
 import SiteFooter from "../components/Footer"
 
 export default function ResumePage() {
     return(
-        <main className="flex min-h-screen w-2/3 flex-col justify-between items-center mx-auto" >
+        <div className="flex min-h-screen w-2/3 flex-col justify-between items-center mx-auto" >
           <TopNavbar />
-          <article className="flex-col bg-white px-16">
-            <h2 className=" text-blue-800 font-semibold text-xl">Roustam Dzhafarov</h2>
-            <div className="flex flex-nowrap space-x-10">
+          <div className="flex bg-white rounded-md mt-3 w-full justify-center">
+            <Link className="underline py-2" href="/dzafarov-roustam-resume.pdf" target="blank">Download my resume as PDF file 📄</Link>
+          </div>
+          <article className="flex-col bg-white px-16 mt-3 pt-3 rounded-xl">
+            <h2 className=" text-blue-800 font-semibold text-xl mb-3">Roustam Dzhafarov</h2>
+            <div className="flex flex-nowrap space-x-10"> 
             <div>
             WORK EXPERIENCE
             <hr className="px-3"/>
@@ -39,7 +43,7 @@ export default function ResumePage() {
               </li>
             </ul>
             <p className="pt-3">
-              Front-end developer	May 2017 – Jan 2022
+              Front-end developer	May 2022 – Sept 2022
             </p>
             <p className=" font-semibold">
               Brightlab , Russia, Rostov-on-Don
@@ -54,7 +58,7 @@ export default function ResumePage() {
               Software engineer <span>May 2017 – Jan 2022</span>
             </p>
             <p className=" font-semibold">
-              Remote work online platforms, remote job
+              Remote work
             </p>
             <ul className=" list-disc pl-8">
               <li>Development of restfull apps with Django, FastAPI, Flask</li>
@@ -64,13 +68,15 @@ export default function ResumePage() {
               <li>Documentation writing</li>
               <li>Scraping & parsing web pages</li>
             </ul>
+            
+            <p className="mt-4">EDUCATION and INTERSHIPS</p>
             <hr className="px-4"/>
-            <p>EDUCATION and INTERSHIPS</p>
-            <p>Yandex.praktikum        March 2023 - September 2023</p>
+            <p className="font-semibold">Yandex.praktikum        March 2023 - September 2023</p>
             <ul className="list-disc pl-8">
               <li>Created Django and FastAPI app for accessing movies database</li>
               <li>Created scripts for ETL from Postges to ElasticSearch</li>
-              <li>Configured conteinerisation with docker-compose</li>
+              <li>Configured project with docker-compose</li>
+              <li>Provided code-reviews for teammates.</li>
             </ul>
             <p className="font-semibold pt-3">FreeCodeCamp.com May 2020</p>
             <p>JavaScript course</p>
@@ -81,17 +87,45 @@ export default function ResumePage() {
             <p>World Economics - specialist degree</p>
             </div>
             
-            <div>
-            <span>CONTACTS</span>
+            <div className=" w-56">
+            <span className="pb-3">CONTACTS</span>
+            <ul className="underline">
+              <li><a href="https://github.com/roustam">Github profile</a></li>
+              <li><a href="https://www.linkedin.com/in/roustam/">Linkedin profile</a></li>
+              <li><a href="https://t.me/Rou1999">Telegram</a></li>
+              <li>roustam.ts@gmail.com <a href="mailto:roustam.ts@gmail.com" ></a></li>
+            </ul>
+            <p className="mt-3">SKILLS</p>
+            <ul className="mb-3">
+              <li>
+                Python
+              </li>
+              <li>
+                FastApi
+              </li>
+              <li>
+                Django
+              </li>
+              <li>
+                SQL Alchemy
+              </li>
+              <li>
+                PyTest
+              </li>
+              <li>
+                RabbitMQ
+              </li>
+            </ul>
+
             <ul>
-              <li><a href="">github</a></li>
-              <li><a href="">linkedin</a></li>
+              <li>ReactJS, Next.js</li>
+              <li>Tailwind CSS</li>
+            
             </ul>
             </div>
-
             </div>
           </article>
           <SiteFooter />
-        </main>
+        </div>
     )
 }
