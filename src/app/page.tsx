@@ -30,8 +30,8 @@ export default function Home() {
         </div>
       </div>
       <div className="flex-col justify-start w-full mb-auto py-4"> 
-        <h2>Recent projects</h2>
-        <div className="grid grid-cols-3 gap-4 rounded-xl py-4 px-4">
+        <h2 className="pb-3">Recent projects</h2>
+        <div className="grid grid-cols-3 gap-4 rounded-xl">
         <ProjectCard 
             projectName="HELLO portal frontend" 
             usedLibs={['ReactJS', 'MaterialUI']}
@@ -69,7 +69,7 @@ export default function Home() {
             usedLibs={['FastAPI', 'ElasticSearch', 'API']}
             sourceLink="https://github.com/roustam/async_api_sprint_team_22"
             
-            description="FastApi based API for movies database. Uses ElasticSearch engine." 
+            description="Movies database search engine API." 
             imageUrl='/img/python-logo.svg'/>
 
           <ProjectCard 

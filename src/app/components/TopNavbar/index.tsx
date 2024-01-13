@@ -17,14 +17,14 @@ export default function TopNavbar() {
           Roustam blog
         </Link>
       </NavbarBrand>
-            <NavbarItem>
+            {/* <NavbarItem>
                 <Link href="/portfolio">
-                My portfolio
+                Useful links
                 </Link>
-            </NavbarItem>
+            </NavbarItem> */}
             <NavbarItem>
               <Link href="/resume">
-                Resume
+                My resume
               </Link>
             </NavbarItem>
             <NavbarItem>
