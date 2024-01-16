@@ -11,12 +11,14 @@ export default function Home() {
         <div className="flex justify-between flex-nowrap">
           <div>
             <p>Hello, my name is Roustam.</p>
+            <p>
+            I&apos;m a Full Stack Engineer focused on building products with extra attention to detail
+            </p>
             <p className=" py-3 tracking-wide">
-          I&apos;m a passionate web developer, weaving the magic of Python to bring your digital vision to life. 
-          Backend is my playground, where I architect robust functionalities with FastAPI and Django. 
-          Let&apos;s turn your ideas into pixels and bytes, crafting a web experience that resonates with your users.
-          </p>
-          <p className=" font-semibold tracking-wide">Contact me today and let&apos;s build something extraordinary.</p>
+              I write simple, concise, and expressive code that is easy to maintain and extend. Currently, I work mostly with FastApi, Django, and ReactJS.
+              I have over 3.5 years of experience in working remotely with companies all around the world.
+            </p>
+          <p className=" font-semibold tracking-wide">Contact me today and lets build something extraordinary.</p>
 
           <p>P.S. I&apos;m not just code - I&apos;m a problem-solver, a collaborator,
            and a person with a knack for turning complex concepts into elegant solutions.</p>
