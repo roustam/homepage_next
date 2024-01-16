@@ -6,9 +6,11 @@ import SiteFooter from "../components/Footer";
 export default function Contacts() {
 
     const [linkText, setLinkText] = useState('Click for displaying email.');
+    const [linkUrl, setLinkUrl] = useState('#')
     const onEmailLinkClick = (event: any): void => {
         // Change the text content of the link
         setLinkText(`roustam.ts@gmail.com` );
+        
     
         // Prevent the default behavior of the link (optional)
         event.preventDefault();
@@ -23,7 +25,7 @@ export default function Contacts() {
                 <p className="font-semibold">Linkedin: <a className="underline" href="https://www.linkedin.com/in/roustam/">https://www.linkedin.com/in/roustam/</a></p>
                 <p className="font-semibold">Github: <a className="underline" href="https://github.com/roustam">https://github.com/roustam</a></p>
                 <p className="font-semibold">Telegram: <a className="underline" href="https://t.me/Rou1999">@Rou1999</a></p>
-                <p className="font-semibold">Email: <a className="underline" onClick={onEmailLinkClick} href="#">{linkText}</a></p>
+                <p className="font-semibold">Email: <a className="underline" onClick={onEmailLinkClick} href={'mailto:'+linkText}>{linkText}</a></p>
             </main>
             <SiteFooter /> 
         </div>
