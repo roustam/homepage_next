@@ -8,7 +8,7 @@ export default function Home() {
     <main className="flex w-2/3 flex-col justify-between items-center mx-auto">
       <TopNavbar />
       <div className="flex flex-nowrap justify-between px-4 py-4 bg-white mt-4 rounded-xl">
-        <div className="flex justify-between flex-nowrap">
+        <div className="flex max-xl:flex-row justify-between flex-nowrap">
           <div>
             <p>Hello, my name is Roustam.</p>
             <p>
@@ -26,14 +26,14 @@ export default function Home() {
 
         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsa, unde atque aliquid alias ipsum commodi voluptas recusandae magnam necessitatibus voluptatum illo dolore, ducimus nam accusamus, quia tempora qui voluptatem!</p> */}
         
-          <Image src={'/img/photo-small.png'} alt="my photo" height={0} width={0}  
+          <Image src={'/img/photo-small.png'} className="max-lg: hidden" alt="my photo" height={0} width={0}  
           style={{ width: 'auto', height: 'auto', borderRadius:"100%" }}  />
           
         </div>
       </div>
       <div className="flex-col justify-start w-full mb-auto py-4"> 
         <h2 className="pb-3">Recent projects</h2>
-        <div className="grid grid-cols-3 gap-4 rounded-xl">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:gap-3 gap-4 rounded-xl">
         <ProjectCard 
             projectName="HELLO portal frontend" 
             usedLibs={['ReactJS', 'MaterialUI']}
@@ -42,7 +42,7 @@ export default function Home() {
             description="Demo site for social network content creators." 
             imageUrl='/img/website-icon.svg'/>
           <ProjectCard 
-            projectName="Blog system to track good deeds." 
+            projectName="Good deeds tracker." 
             usedLibs={['NextJS','OAuth','Prisma']}
             sourceLink="https://github.com/roustam/thankb"
             demoLink="https://test.thankband.com/"
@@ -67,7 +67,7 @@ export default function Home() {
             imageUrl='/img/country-location-icon.svg'/>
           
           <ProjectCard 
-            projectName="Yandex.practicum completed tasks" 
+            projectName="Yandex.practicum tasks" 
             usedLibs={['FastAPI', 'ElasticSearch', 'API']}
             sourceLink="https://github.com/roustam/async_api_sprint_team_22"
             

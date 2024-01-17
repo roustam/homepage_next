@@ -13,8 +13,8 @@ interface CardProps {
   const ProjectCard: React.FC<CardProps> = ({ projectName, sourceLink,demoLink, usedLibs, imageUrl, description}) => {
 
     return (
-        <Card className="max-w-[400px]">
-            <CardHeader className="flex justify-between gap-3 h-20">
+        <Card className="xl:max-w-[400px] md:w-full">
+            <CardHeader className="flex justify-between h-20">
             <div className="flex flex-col justify-center">
                     <p className="text-md">{projectName}</p>
                     <p className="text-small text-default-500">
@@ -23,11 +23,11 @@ interface CardProps {
                 </div>
                 <div>
                 <Image
-                    radius="md"
-                    alt="nextui logo"
+                    radius="none"
+                    alt="job logo icon"
                     src={imageUrl}
-                    
-                    width={40}
+                    className="min-w-full"
+                    width={'40px'}
                     />
                 </div>
             </CardHeader>

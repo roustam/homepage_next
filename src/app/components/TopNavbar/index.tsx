@@ -22,12 +22,12 @@ export default function TopNavbar() {
                 Useful links
                 </Link>
             </NavbarItem> */}
-            <NavbarItem>
+            <NavbarItem className="max-sm:hidden">
               <Link href="/resume">
                 My resume
               </Link>
             </NavbarItem>
-            <NavbarItem>
+            <NavbarItem className="max-sm:hidden">
               <Link href="/contacts">
                 Contacts
               </Link>
