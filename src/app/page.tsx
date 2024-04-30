@@ -20,7 +20,7 @@ export default function Home() {
             </p>
           <p className=" font-semibold tracking-wide">Contact me today and lets build something extraordinary.</p>
 
-          <p>P.S. I&apos;m not just code - I&apos;m a problem-solver, a collaborator,
+          <p>P.S. I dont&apos;t  just code - I&apos;m a problem-solver, a collaborator,
            and a person with a knack for turning complex concepts into elegant solutions.</p>
           </div>
 
