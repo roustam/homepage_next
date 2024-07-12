@@ -16,7 +16,7 @@ export default function Home() {
             </p>
             <p className=" py-3 tracking-wide">
               I write simple, concise, and expressive code that is easy to maintain and extend. Currently, I work mostly with FastApi, Django, and ReactJS.
-              I have over 3.5 years of experience in working remotely with companies all around the world.
+              I have over 6 years of experience in working remotely with companies all around the world.
             </p>
           <p className=" font-semibold tracking-wide">Contact me today and lets build something extraordinary.</p>
 
