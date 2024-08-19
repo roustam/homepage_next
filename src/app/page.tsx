@@ -21,11 +21,9 @@ export default function Home() {
           <p className=" font-semibold tracking-wide">Contact me today and lets build something extraordinary.</p>
 
           <p>P.S. I&apos;m not just writing code - I solve client problems, collaborate
-           and a person with a knack for turning complex concepts into elegant solutions.</p>
+           and turn complex concepts into elegant solutions.</p>
           </div>
 
-        {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsa, unde atque aliquid alias ipsum commodi voluptas recusandae magnam necessitatibus voluptatum illo dolore, ducimus nam accusamus, quia tempora qui voluptatem!</p> */}
-        
           <Image src={'/img/photo-small.png'} className="max-lg: hidden" alt="my photo" height={0} width={0}  
           style={{ width: 'auto', height: 'auto', borderRadius:"100%" }}  />
           
